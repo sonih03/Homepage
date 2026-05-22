@@ -173,7 +173,7 @@ export default function Gallery() {
           <div className="h-1 w-12 bg-brand-blue mx-auto rounded-full mb-6"></div>
           <p className="text-[#4E5968] text-base sm:text-lg font-light leading-relaxed">
             전국 각지에서 성실하게 직접 시공한 가온홈시스템의 네이버 블로그 작업 일지입니다.<br className="hidden sm:inline" />
-            최신 시공 내역과 생생한 시공 현장의 모습을 실시간 피드로 확인해 보세요.
+            최신 시공 내역과 생생한 시공 현장의 모습을 확인해 보세요.
           </p>
         </div>
 

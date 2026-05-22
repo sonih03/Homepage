@@ -90,7 +90,7 @@ export default function BeforeAfterSlider() {
           </p>
           <div className="h-1 w-12 bg-brand-blue mx-auto rounded-full mb-6"></div>
           <p className="text-[#4E5968] text-base sm:text-lg font-light leading-relaxed max-w-2xl mx-auto">
-            중앙의 핸들바를 좌우로 드래그하여 아버님이 현장에서 직접 완성하신 비포/애프터의 완벽한 마감 차이를 비교해 보세요!
+            중앙의 핸들바를 좌우로 드래그하여 비포/애프터의 차이를 비교해 보세요!
           </p>
         </div>
 
