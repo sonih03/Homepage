@@ -8,14 +8,14 @@ export default {
     extend: {
       colors: {
         brand: {
-          dark: '#030303',      // Deepest black
-          card: '#0D0D0F',      // Card background
-          cardHover: '#16161A', // Card hover background
-          red: '#DC2626',       // Main Accent Red
-          redHover: '#B91C1C',  // Hover Red
-          light: '#F3F4F6',     // Light text
-          gray: '#9CA3AF',      // Muted text
-          border: '#1F2937',    // Border color
+          bg: '#F8F9FA',         // Off-white main background
+          text: '#191F28',       // Premium Dark Gray main text
+          textMuted: '#64748B',  // Slate subtext
+          blue: '#3182F6',       // Premium Blue accent (Toss/Apple)
+          blueHover: '#1B64DA',  // Hover Blue
+          subTextGray: '#4E5968', // Toss-style Slate/Dark Gray subtext
+          card: '#FFFFFF',       // Card background (Pure White)
+          border: '#F1F5F9',     // Thin border slate-100
         }
       },
       fontFamily: {
