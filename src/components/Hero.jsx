@@ -40,7 +40,7 @@ export default function Hero() {
 
         {/* Hero Subtitle */}
         <p className="max-w-2xl mx-auto text-base sm:text-lg md:text-xl text-[#4E5968] mb-10 leading-relaxed font-light">
-          아버님이 직접 현장에 방문하여 내 집처럼 <span className="text-brand-text font-bold">정직하고, 꼼꼼하게</span> 설치합니다. <br />
+          직접 현장에 방문하여 내 집처럼 <span className="text-brand-text font-bold">정직하고, 꼼꼼하게</span> 설치합니다. <br />
           오랜 경력의 노하우로 깔끔하고 빈틈없는 마감을 약속드립니다.
         </p>
 

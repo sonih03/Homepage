@@ -257,7 +257,7 @@ export default function ProductCatalog({ onViewChange, onSelectService }) {
               className="w-full sm:w-auto flex items-center justify-center space-x-2 bg-brand-blue hover:bg-brand-blueHover text-white px-6 py-3 rounded-xl font-bold text-sm transition-all duration-300"
             >
               <Phone className="h-4 w-4" />
-              <span>아버님께 바로 전화 상담</span>
+              <span>바로 전화 상담</span>
             </a>
             <button
               onClick={() => onViewChange('home')}

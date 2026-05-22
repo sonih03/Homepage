@@ -122,7 +122,7 @@ export default function ContactForm({ selectedService, resetSelectedService }) {
           </p>
           <div className="h-1 w-12 bg-brand-blue mx-auto rounded-full mb-6"></div>
           <p className="text-[#4E5968] text-base font-light max-w-xl mx-auto">
-            시공이 필요하신 항목을 선택하여 문의를 남겨주시면, 아버님이 내용 확인 후 신속하고 정직하게 전화상담을 도와드립니다.
+            시공이 필요하신 항목을 선택하여 문의를 남겨주시면, 내용 확인 후 신속하고 정직하게 전화상담을 도와드립니다.
           </p>
         </div>
 
@@ -254,7 +254,7 @@ export default function ContactForm({ selectedService, resetSelectedService }) {
                     개인정보 수집 및 이용 동의 <span className="text-red-500 font-bold">(필수)</span>
                   </span>
                   <span className="text-[10px] text-[#4E5968] mt-1 font-light leading-relaxed">
-                    작성해 주신 정보는 아버님의 견적 상담 제공 목적으로만 일시 보관되며, 상담 후 완전 파기됩니다.
+                    작성해 주신 정보는 견적 상담 제공 목적으로만 일시 보관되며, 상담 후 완전 파기됩니다.
                   </span>
                 </div>
               </label>
@@ -303,7 +303,7 @@ export default function ContactForm({ selectedService, resetSelectedService }) {
               견적 문의 접수 준비 완료!
             </h3>
             <p className="text-[#4E5968] text-xs sm:text-sm font-light mb-6">
-              입력하신 문의 내역이 정리되었습니다. 아래 버튼을 눌러 아버님께 문자를 직접 전송해 주시면 바로 신청이 접수됩니다.
+              입력하신 문의 내역이 정리되었습니다. 아래 버튼을 눌러 문자를 전송해 주시면 바로 신청이 접수됩니다.
             </p>
 
             {/* Form details box */}

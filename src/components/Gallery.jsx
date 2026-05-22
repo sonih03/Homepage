@@ -45,7 +45,7 @@ export default function Gallery() {
           </p>
           <div className="h-1 w-12 bg-brand-blue mx-auto rounded-full mb-6"></div>
           <p className="text-[#4E5968] text-base sm:text-lg font-light leading-relaxed">
-            아버님이 고양시 전역에서 직접 진행하신 생생한 작업 현장입니다. <br />
+            고양시 전역에서 직접 진행한 작업 현장입니다. <br />
             실제 설치 사진이 업데이트될 예정이며, 아래 버튼을 통해 네이버 블로그에서 다양한 사례를 먼저 확인해 보세요.
           </p>
         </div>
