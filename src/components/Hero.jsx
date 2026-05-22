@@ -33,7 +33,7 @@ export default function Hero() {
         {/* Hero Title */}
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-black tracking-tight text-brand-text mb-6 leading-tight">
           비디오폰 & 도어락 설치 전문 <br className="hidden sm:inline" />
-          <span className="bg-gradient-to-r from-brand-text to-brand-blue bg-clip-text text-transparent">
+          <span className="text-brand-blue">
             정성홈넷 고양점
           </span>
         </h1>

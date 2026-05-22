@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Services from './components/Services';
+import BeforeAfterSlider from './components/BeforeAfterSlider';
 import Gallery from './components/Gallery';
 import ContactForm from './components/ContactForm';
 import Footer from './components/Footer';
@@ -33,6 +34,9 @@ function App() {
 
             {/* Services Section */}
             <Services onViewChange={setView} />
+
+            {/* Before & After Slider Section */}
+            <BeforeAfterSlider />
 
             {/* Gallery Section */}
             <Gallery />
