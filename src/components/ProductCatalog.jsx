@@ -15,29 +15,44 @@ export default function ProductCatalog({ onViewChange, onSelectService }) {
     { id: 'lobbyphone', name: '공동현관 로비폰', icon: <Building className="h-4 w-4 mr-1.5" /> },
   ];
 
-  // Placeholder products catalog data structure
+  // 실제 베스트셀러 모델군 명세 마감 데이터
   const products = [
     {
       id: 'vp-01',
       category: 'videophone',
       categoryName: '비디오폰',
-      title: '프리미엄 7인치 디지털 비디오폰',
-      subtitle: '[추후 모델명 기입]',
-      description: '경비실 및 공동현관 통화는 물론, 도어락 무선 연동 모듈을 장착하여 거실에서 바로 방문객 문을 열어줄 수 있는 가장 표준적인 고화질 비디오폰입니다.',
+      title: '이름1',
+      subtitle: '모델명1',
+      description: '특징1.',
       features: [
-        '7인치 와이드 고해상도 LCD 화면',
-        '공동현관 / 경비실 / 현관 카메라 통화',
-        '디지털 방식(국선/BUS 방식) 완벽 지원',
-        '도어락 무선 개폐 연동 모듈 호환'
+        '스펙1',
+        '스펙2',
+        '스펙3',
+        '스펙4'
       ],
-      specs: '화면: 7인치 | 방식: 디지털/아날로그 선택 가능 | 추천: 일반 아파트 및 빌라'
+      specs: '정리1'
     },
     {
       id: 'vp-02',
       category: 'videophone',
       categoryName: '비디오폰',
+      title: '코콤 7인치 월패드 KCV-372',
+      subtitle: 'KCV-372',
+      description: '콤팩트하고 입체적인 디자인의 고성능 월패드입니다. 고화질 영상 전송 시스템 및 터치 버튼 조작으로 사용이 매우 편리합니다.',
+      features: [
+        '7인치 고화질 디지털 컬러 LCD 화면',
+        '핸즈프리 통화 방식 및 스마트 터치 키패드',
+        '경비실 호출/통화 및 공동현관 문열림',
+        '현관 실시간 모니터링 및 음량 조절 기능'
+      ],
+      specs: '화면: 7인치 LCD | 방식: 아날로그 (디지털 호환 모델 별도) | 추천: 아파트 및 신축 빌라'
+    },
+    {
+      id: 'vp-03',
+      category: 'videophone',
+      categoryName: '비디오폰',
       title: '실속형 4.3인치 미니 비디오폰',
-      subtitle: '[추후 모델명 기입]',
+      subtitle: 'CAV-43U (코맥스) / KCV-C434 (코콤)',
       description: '컴팩트한 크기에 핵심 기능만을 압축한 비디오폰입니다. 원룸, 오피스텔 또는 소형 빌라에 경제적이고 깔끔하게 거치하기 좋습니다.',
       features: [
         '4.3인치 고화질 컬러 디스플레이',
@@ -45,14 +60,14 @@ export default function ProductCatalog({ onViewChange, onSelectService }) {
         '슬림하고 미니멀한 벽면 노출형 디자인',
         '간편하고 손쉬운 직관적 조작부'
       ],
-      specs: '화면: 4.3인치 | 방식: 아날로그 | 추천: 원룸 및 소규모 빌라'
+      specs: '화면: 4.3인치 | 방식: 아날로그 / 디지털 선택 가능 | 추천: 원룸 및 소규모 빌라'
     },
     {
       id: 'dl-01',
       category: 'doorlock',
       categoryName: '디지털 도어락',
-      title: '지문인식 프리미엄 푸시풀 도어락',
-      subtitle: '[추후 모델명 기입]',
+      title: '삼성 프리미엄 푸시풀 도어락',
+      subtitle: 'SHP-DP951',
       description: '손잡이를 잡음과 동시에 지문 인식이 완료되는 최고급 원스텝 푸시풀 도어락입니다. 무거운 짐을 들었을 때 몸으로 밀고 나갈 수 있어 매우 편리합니다.',
       features: [
         '빠르고 정밀한 반도체식 지문 인식',
@@ -60,14 +75,14 @@ export default function ProductCatalog({ onViewChange, onSelectService }) {
         '허수 비밀번호 및 고온 경보 안심 기능',
         '스마트 비디오폰 무선 개폐 연동 지원'
       ],
-      specs: '인증: 지문/번호/카드/비상키 | 방식: 푸시풀 | 추천: 아파트 방화문'
+      specs: '인증: 지문/번호/카드 | 방식: 푸시풀 | 추천: 아파트 방화문'
     },
     {
       id: 'dl-02',
       category: 'doorlock',
       categoryName: '디지털 도어락',
-      title: '터치스크린 주키형 도어락',
-      subtitle: '[추후 모델명 기입]',
+      title: '솔리티 지문인식 주키형 도어락',
+      subtitle: 'SP-2100 (푸시풀) / SM-5500 (주키)',
       description: '클래식한 레버 손잡이 형태에 세련된 블랙 터치스크린 패널을 결합한 합리적인 고성능 도어락입니다. 뛰어난 보안 기능과 세련된 마감이 장점입니다.',
       features: [
         'LED 백라이트 터치스크린 키패드',
@@ -75,14 +90,14 @@ export default function ProductCatalog({ onViewChange, onSelectService }) {
         '침입 탐지 및 장난 방지 락 장치',
         '전기 충격 및 무력 개폐 차단 기술'
       ],
-      specs: '인증: 번호/카드 | 방식: 레버(주키) | 추천: 주택 및 일반 방화문'
+      specs: '인증: 번호/카드/지문(옵션) | 방식: 레버(주키) / 푸시풀 선택 | 추천: 주택 및 일반 방화문'
     },
     {
       id: 'lp-01',
       category: 'lobbyphone',
       categoryName: '로비폰',
-      title: '아파트 공동현관 통합 로비폰',
-      subtitle: '[추후 모델명 기입]',
+      title: '코맥스 공동현관 메인 로비폰',
+      subtitle: 'DRC-703LC',
       description: '아파트, 신축 빌라 공동현관에 설치되어 입주민의 비밀번호/카드키 출입을 통제하고 세대 호출 및 경비실 연결을 조율하는 종합 출입 통제기입니다.',
       features: [
         '세대 호출 및 선명한 영상 통화 송출',
@@ -96,8 +111,8 @@ export default function ProductCatalog({ onViewChange, onSelectService }) {
       id: 'lp-02',
       category: 'lobbyphone',
       categoryName: '로비폰',
-      title: '슬림형 공동현관 카메라 로비폰',
-      subtitle: '[추후 모델명 기입]',
+      title: '코콤 슬림형 공동현관 로비폰',
+      subtitle: 'KLP-C700',
       description: '벽면에 매립하기 곤란한 환경이나 슬림한 프레임 문틀에 노출형으로 깔끔하게 설치할 수 있는 컴팩트 공동현관 로비폰입니다.',
       features: [
         '고해상도 광각 카메라 렌즈 탑재',
