@@ -46,7 +46,7 @@ export default function Navbar({ currentView, onViewChange }) {
   ];
 
   return (
-    <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
+    <nav className={`fixed top-0 left-0 w-full z-[60] transition-all duration-300 ${
       scrolled 
         ? 'glass-nav border-b border-slate-200/60 py-3 shadow-[0_2px_15px_rgba(0,0,0,0.02)]' 
         : 'bg-transparent py-5'

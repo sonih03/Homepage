@@ -81,7 +81,7 @@ export default function Footer() {
       </footer>
 
       {/* Mobile Sticky Quick Menu (visible only on mobile/tablet) */}
-      <div className="md:hidden fixed bottom-0 left-0 w-full z-45 bg-white/95 border-t border-slate-200 p-3 flex gap-3 shadow-[0_-8px_30px_rgba(0,0,0,0.05)] backdrop-blur-md">
+      <div className="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-white border-t border-slate-200 p-3 flex gap-3 shadow-[0_-4px_20px_rgba(0,0,0,0.06)]">
         <a
           href="tel:010-3977-1969"
           className="flex-1 flex items-center justify-center space-x-1.5 bg-brand-blue hover:bg-brand-blueHover text-white py-3.5 rounded-xl font-extrabold text-sm transition-all duration-300"
