@@ -6,22 +6,34 @@ export default function Services({ onViewChange }) {
     {
       icon: <Tv className="h-8 w-8 text-brand-blue" />,
       title: '비디오폰 설치',
-      description: '아파트, 빌라, 단독주택 등 주거 형태에 맞춘 최적의 비디오폰 설치. 노후 인터폰 교체 및 지저분한 벽면 마감판 처리까지 완벽하고 깔끔하게 시공합니다.',
-      features: ['코콤·코맥스 등 브랜드 취급', '아파트 국선/디지털 방식 호환', '매립형/노출형 깔끔한 마감'],
+      description: '주거 형태(아파트, 빌라, 주택 등)에 꼭 맞춘 최적의 비디오폰 시공을 약속드립니다.',
+      features: [
+        '삼성(직방) · 코맥스 · 코콤 전 브랜드 취급',
+        '디지털 · 아날로그 · 국선 방식 100% 호환',
+        '노후 인터폰 탈거 자국 깔끔한 마감 처리'
+      ],
       targetCatalog: 'videophone'
     },
     {
       icon: <KeyRound className="h-8 w-8 text-brand-blue" />,
       title: '디지털 도어락 설치',
-      description: '최신 푸시풀(Push-Pull), 지문인식, 스마트 카드키, 비밀번호 방식의 디지털 도어락을 정밀 설치합니다. 노후 문 처짐 현상까지 꼼꼼히 점검해 드립니다.',
-      features: ['삼성·게이트맨·솔리티 등 공식 대리점', '지문·스마트폰 연동 도어락', '방화문/유리문/샤시문 맞춤 설치'],
+      description: '최신 스마트 도어락을 안전하고 정밀하게 설치하며, 문 처짐 현상까지 꼼꼼히 점검합니다.',
+      features: [
+        '삼성 · 게이트맨 · 솔리티 최신 스마트락',
+        '원스텝 지문인식 및 프리미엄 푸시풀 전문',
+        '방화문 / 유리문 / 샤시문 현장 맞춤 설치'
+      ],
       targetCatalog: 'doorlock'
     },
     {
       icon: <Wifi className="h-8 w-8 text-brand-blue" />,
       title: '도어락 & 비디오폰 연동',
-      description: '거실 비디오폰에서 방문자를 확인한 후, 현관까지 가지 않고 무선으로 도어락을 열 수 있는 연동 모듈 및 무선 송수신기를 셋팅해 드립니다.',
-      features: ['원격 문열림 무선 송수신기 연동', '귀찮은 문열림 해결', '모든 제조사 호환 및 연동셋팅'],
+      description: '거실에서 화면을 확인하고 버튼 클릭 한 번으로 현관문을 간편하게 열 수 있습니다.',
+      features: [
+        '거실 문열림 무선 송수신기 연동 세팅',
+        '귀찮은 현관 문열림 완벽 해결',
+        '전 제조사 호환 및 무선 연동 테스트'
+      ],
       targetCatalog: 'lobbyphone' // Or general interlocking
     },
   ];
@@ -66,16 +78,16 @@ export default function Services({ onViewChange }) {
               </h3>
 
               {/* Description */}
-              <p className="text-[#4E5968] text-xs sm:text-sm leading-relaxed mb-6 flex-grow font-light">
+              <p className="text-[#4E5968] text-xs sm:text-sm leading-relaxed mb-6 flex-grow font-light break-keep">
                 {service.description}
               </p>
 
               {/* Bullet Features */}
               <ul className="space-y-2.5 pt-5 border-t border-slate-100 mb-6">
                 {service.features.map((feat) => (
-                  <li key={feat} className="text-xs text-slate-700 flex items-center space-x-2 font-light">
+                  <li key={feat} className="text-sm text-slate-700 flex items-center space-x-2 font-light">
                     <span className="w-1.5 h-1.5 rounded-full bg-brand-blue shrink-0"></span>
-                    <span>{feat}</span>
+                    <span className="break-keep">{feat}</span>
                   </li>
                 ))}
               </ul>
