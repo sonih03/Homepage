@@ -41,13 +41,11 @@ export default function Services({ onViewChange }) {
             전문적이고 정직한 주요 서비스
           </p>
           <div className="h-1 w-12 bg-brand-blue mx-auto rounded-full mb-6"></div>
-          {/* <p className="text-[#4E5968] text-base sm:text-lg font-light leading-relaxed">
-            정성홈넷 고양점은 오랜 시공 노하우를 바탕으로 고객님의 편의와 집안의 안전을 생각하며 최고의 기술로 만족스러운 설치를 제공합니다.
-          </p> */}
+
           <p className="text-[#4E5968] text-xs sm:text-sm font-light mb-12 max-w-3xl mx-auto relative z-10 leading-relaxed text-center">
-            정성홈넷 고양점은 오랜 시공 노하우를 바탕으로 고객님의 편의와 집안의 안전을 생각하며 <br className="hidden sm:inline" />
+            정성홈넷은 오랜 시공 노하우를 바탕으로 고객님의 편의와 집안의 안전을 생각하며 <br className="hidden sm:inline" />
             최고의 기술로 만족스러운 설치를 제공합니다.
-</p>
+          </p>
         </div>
 
         {/* Services Grid (3 Columns) */}

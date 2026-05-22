@@ -17,11 +17,11 @@ export default function Footer() {
                   <ShieldCheck className="h-5 w-5 text-white" />
                 </div>
                 <span className="text-brand-text font-black tracking-tight text-base">
-                  정성홈넷 고양점
+                  정성홈넷
                 </span>
               </div>
               <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-light">
-                고양시 비디오폰, 디지털 도어락, 공동현관 로비폰 설치 전문 대리점. <br />
+                전국 비디오폰, 디지털 도어락, 공동현관 로비폰 설치 전문. <br />
                 내 집처럼 소중하고 깔끔하게 꼼꼼한 책임 시공을 약속합니다.
               </p>
             </div>
@@ -30,13 +30,13 @@ export default function Footer() {
             <div className="space-y-4">
               <h4 className="text-brand-text font-bold text-sm tracking-wide flex items-center space-x-1.5">
                 <MapPin className="h-4 w-4 text-brand-blue" />
-                <span>출장 가능 지역</span>
+                <span>전국 서비스 네트워크</span>
               </h4>
               <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-light">
-                <strong className="text-brand-text font-bold">고양시 전 지역 출장 시공</strong> <br />
-                덕양구 (주교동, 원당동, 화정동, 행신동, 삼송동 등) <br />
-                일산동구 (식사동, 중산동, 정발산동, 마두동, 백석동 등) <br />
-                일산서구 (일산동, 탄현동, 주엽동, 대화동, 덕이동 등)
+                <strong className="text-brand-text font-bold">수도권 및 전국 주요 도시 신속 출장</strong> <br />
+                서울, 경기, 인천 등 수도권 전 지역 <br />
+                대전, 대구, 부산, 광주 등 전국 주요 광역시 <br />
+                네트워크를 통한 신속한 시공 및 예약 시공 가능
               </p>
             </div>
 
@@ -71,7 +71,7 @@ export default function Footer() {
           {/* Copyright Area */}
           <div className="border-t border-slate-200 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
             <p className="font-light">
-              &copy; {currentYear} 정성홈넷 고양점. All rights reserved.
+              &copy; {currentYear} 정성홈넷. All rights reserved.
             </p>
             <p className="text-slate-500 font-light text-center sm:text-right">
               본 사이트는 비디오폰 및 도어락 간편 견적 안내를 위한 단독 랜딩 페이지입니다.

@@ -6,6 +6,7 @@ export default function ContactForm({ selectedService, resetSelectedService }) {
     name: '',
     phone: '',
     service: '비디오폰 설치',
+    region: '서울',
     address: '',
     memo: '',
     agree: false,
@@ -20,6 +21,17 @@ export default function ContactForm({ selectedService, resetSelectedService }) {
     '비디오폰 + 도어락 무선 연동',
     '공동현관 로비폰 설치',
     '기타 설치 및 수리 문의',
+  ];
+
+  const regionsList = [
+    '서울',
+    '경기',
+    '인천',
+    '강원',
+    '충청',
+    '전라',
+    '경상',
+    '제주',
   ];
 
   // Set selected service from product catalog redirect
@@ -79,13 +91,13 @@ export default function ContactForm({ selectedService, resetSelectedService }) {
     }
   };
 
-  // Compile SMS text message
+  // Compile SMS text message with regional information
   const getSmsUrl = () => {
     const message = `[정성홈넷 견적신청]
 이름: ${formData.name}
 연락처: ${formData.phone}
 의뢰항목: ${formData.service}
-지역/주소: ${formData.address || '미지정(전화협의)'}
+지역: [${formData.region}] ${formData.address || '상세주소 미지정'}
 문의내용: ${formData.memo || '없음'}`;
     
     return `sms:010-3977-1969?body=${encodeURIComponent(message)}`;
@@ -98,6 +110,7 @@ export default function ContactForm({ selectedService, resetSelectedService }) {
       name: '',
       phone: '',
       service: '비디오폰 설치',
+      region: '서울',
       address: '',
       memo: '',
       agree: false,
@@ -126,7 +139,7 @@ export default function ContactForm({ selectedService, resetSelectedService }) {
           </p>
         </div>
 
-        {/* Contact Form Card (Pure White) */}
+        {/* Contact Form Card */}
         <div className="bg-white border border-slate-100 rounded-3xl p-6 sm:p-10 shadow-[0_8px_30px_rgb(0,0,0,0.03)] glass-card">
           <form onSubmit={handleSubmit} className="space-y-6">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
@@ -207,20 +220,43 @@ export default function ContactForm({ selectedService, resetSelectedService }) {
               </div>
             </div>
 
-            {/* Address Input */}
-            <div>
-              <label htmlFor="address" className="block text-sm font-bold text-brand-text mb-2">
-                시공 지역 / 주소 <span className="text-[#4E5968] text-xs font-normal">(예: 고양시 덕양구 화정동)</span>
-              </label>
-              <input
-                type="text"
-                id="address"
-                name="address"
-                value={formData.address}
-                onChange={handleInputChange}
-                placeholder="상세 주소가 아닌 동 단위까지만 입력해 주셔도 무방합니다."
-                className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-brand-text placeholder-slate-400 focus:bg-white transition-all duration-300"
-              />
+            {/* Regional Dropdown and Detail Address Input */}
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+              {/* Region Select Dropdown */}
+              <div className="sm:col-span-1">
+                <label htmlFor="region" className="block text-sm font-bold text-brand-text mb-2">
+                  대지역 선택 <span className="text-red-500">*</span>
+                </label>
+                <select
+                  id="region"
+                  name="region"
+                  value={formData.region}
+                  onChange={handleInputChange}
+                  className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3.5 text-brand-text focus:bg-white focus:border-brand-blue focus:ring-1 focus:ring-brand-blue outline-none transition-all duration-300 cursor-pointer font-medium text-sm"
+                >
+                  {regionsList.map((reg) => (
+                    <option key={reg} value={reg}>
+                      {reg}
+                    </option>
+                  ))}
+                </select>
+              </div>
+
+              {/* Detail Address Input */}
+              <div className="sm:col-span-2">
+                <label htmlFor="address" className="block text-sm font-bold text-brand-text mb-2">
+                  상세 지역 / 주소 <span className="text-[#4E5968] text-xs font-normal">(예: 서울시 마포구 아현동 / 전국 시공)</span>
+                </label>
+                <input
+                  type="text"
+                  id="address"
+                  name="address"
+                  value={formData.address}
+                  onChange={handleInputChange}
+                  placeholder="동/읍/면 단위까지만 입력해 주셔도 견적이 가능합니다."
+                  className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-brand-text placeholder-slate-400 focus:bg-white transition-all duration-300"
+                />
+              </div>
             </div>
 
             {/* Memo Textarea */}
@@ -280,7 +316,7 @@ export default function ContactForm({ selectedService, resetSelectedService }) {
         </div>
       </div>
 
-      {/* Success Modal (Premium White Card) */}
+      {/* Success Modal */}
       {isModalOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm">
           <div className="relative bg-white border border-slate-100 rounded-3xl p-6 sm:p-8 max-w-md w-full text-center shadow-2xl animate-in fade-in zoom-in duration-300">
@@ -311,7 +347,7 @@ export default function ContactForm({ selectedService, resetSelectedService }) {
               <div><span className="text-[#4E5968]">의뢰인:</span> <span className="text-brand-text font-bold">{formData.name}님</span></div>
               <div><span className="text-[#4E5968]">연락처:</span> <span className="text-brand-text font-bold">{formData.phone}</span></div>
               <div><span className="text-[#4E5968]">설치항목:</span> <span className="text-brand-blue font-bold">{formData.service}</span></div>
-              <div><span className="text-[#4E5968]">시공지역:</span> <span className="text-brand-text">{formData.address || '미지정'}</span></div>
+              <div><span className="text-[#4E5968]">시공지역:</span> <span className="text-brand-text font-bold">[{formData.region}] {formData.address || '상세주소 미지정'}</span></div>
             </div>
 
             {/* Modal Actions */}

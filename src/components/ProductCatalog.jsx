@@ -21,16 +21,16 @@ export default function ProductCatalog({ onViewChange, onSelectService }) {
       id: 'vp-01',
       category: 'videophone',
       categoryName: '비디오폰',
-      title: '이름1',
-      subtitle: '모델명1',
-      description: '특징1.',
+      title: '삼성 7인치 프리미엄 비디오폰',
+      subtitle: 'SHT-3527XM',
+      description: '터치스크린 방식의 프리미엄 디자인 월패드입니다. 세련된 메탈릭 룩으로 거실 인테리어를 돋보이게 하며, 선명한 대화면으로 방문자를 확인하고 디지털 도어락과 무선 연동할 수 있습니다.',
       features: [
-        '스펙1',
-        '스펙2',
-        '스펙3',
-        '스펙4'
+        '7인치 고해상도 대화면 컬러 TFT LCD',
+        '스마트 터치스크린 및 직관적인 GUI 인터페이스',
+        '공동현관 및 세대 현관 방문자 영상 통화',
+        '경비실 상호 통화 및 디지털 도어락 무선 연동 지원'
       ],
-      specs: '정리1'
+      specs: '화면: 7인치 터치 | 방식: 디지털 BUS 방식 | 추천: 아파트 및 고급 빌라'
     },
     {
       id: 'vp-02',
@@ -161,7 +161,7 @@ export default function ProductCatalog({ onViewChange, onSelectService }) {
             시공 제품 종류 및 특징 안내
           </h1>
           <p className="text-[#4E5968] text-sm sm:text-base font-light max-w-2xl">
-            정성홈넷 고양점에서 취급 및 전문 시공하고 있는 비디오폰, 도어락, 로비폰의 대략적인 분류와 상세 스펙 예시입니다. 고객님 댁의 환경에 맞는 맞춤 상담을 받아보세요.
+            정성홈넷에서 취급 및 전문 시공하고 있는 비디오폰, 도어락, 로비폰의 대략적인 분류와 상세 스펙 예시입니다. 고객님 댁의 환경에 맞는 맞춤 상담을 받아보세요.
           </p>
         </div>
 

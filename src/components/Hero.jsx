@@ -26,7 +26,7 @@ export default function Hero() {
         <div className="inline-flex items-center space-x-2 bg-brand-blue/5 border border-brand-blue/10 px-4 py-2 rounded-full mb-8 animate-pulse shadow-sm">
           <MapPin className="h-4 w-4 text-brand-blue" />
           <span className="text-xs sm:text-sm font-bold text-brand-blue tracking-wide">
-            고양시 전 지역 신속 출장 가능
+            전국 서비스 네트워크를 통한 신속 시공
           </span>
         </div>
 
@@ -34,7 +34,7 @@ export default function Hero() {
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-black tracking-tight text-brand-text mb-6 leading-tight">
           비디오폰 & 도어락 설치 전문 <br className="hidden sm:inline" />
           <span className="text-brand-blue">
-            정성홈넷 고양점
+            정성홈넷
           </span>
         </h1>
 
