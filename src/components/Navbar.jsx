@@ -64,7 +64,7 @@ export default function Navbar({ currentView, onViewChange }) {
             </div>
             <div className="flex flex-col">
               <span className="text-lg font-extrabold tracking-tight text-brand-text group-hover:text-brand-blue transition-colors duration-300">
-                정성홈넷 <span className="text-brand-blue font-medium text-sm ml-1 px-1.5 py-0.5 rounded bg-brand-blue/5 border border-brand-blue/10">전국 서비스</span>
+                가온홈시스템 <span className="text-brand-blue font-medium text-sm ml-1 px-1.5 py-0.5 rounded bg-brand-blue/5 border border-brand-blue/10">전국 서비스</span>
               </span>
               <span className="text-[10px] text-brand-textMuted tracking-wide">비디오폰 · 도어락 전문</span>
             </div>

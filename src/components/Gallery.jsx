@@ -168,11 +168,11 @@ export default function Gallery() {
             Installation Gallery
           </h2>
           <p className="text-3xl sm:text-4xl font-extrabold text-brand-text tracking-tight mb-4">
-            정성홈넷 실제 시공 갤러리
+            가온홈시스템 실제 시공 갤러리
           </p>
           <div className="h-1 w-12 bg-brand-blue mx-auto rounded-full mb-6"></div>
           <p className="text-[#4E5968] text-base sm:text-lg font-light leading-relaxed">
-            전국 각지에서 성실하게 직접 시공한 정성홈넷의 네이버 블로그 작업 일지입니다.<br className="hidden sm:inline" />
+            전국 각지에서 성실하게 직접 시공한 가온홈시스템의 네이버 블로그 작업 일지입니다.<br className="hidden sm:inline" />
             최신 시공 내역과 생생한 시공 현장의 모습을 실시간 피드로 확인해 보세요.
           </p>
         </div>
@@ -274,7 +274,7 @@ export default function Gallery() {
             rel="noopener noreferrer"
             className="inline-flex items-center space-x-2 bg-brand-blue hover:bg-brand-blueHover text-white px-8 py-4 rounded-xl font-bold text-base transition-all duration-300 shadow-lg shadow-brand-blue/10 transform hover:-translate-y-0.5 relative z-10"
           >
-            <span>정성홈넷 블로그 바로가기</span>
+            <span>가온홈시스템 블로그 바로가기</span>
             <ExternalLink className="h-4 w-4" />
           </a>
         </div>

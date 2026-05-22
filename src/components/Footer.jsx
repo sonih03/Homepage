@@ -17,7 +17,7 @@ export default function Footer() {
                   <ShieldCheck className="h-5 w-5 text-white" />
                 </div>
                 <span className="text-brand-text font-black tracking-tight text-base">
-                  정성홈넷
+                  가온홈시스템
                 </span>
               </div>
               <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-light">
@@ -71,7 +71,7 @@ export default function Footer() {
           {/* Copyright Area */}
           <div className="border-t border-slate-200 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
             <p className="font-light">
-              &copy; {currentYear} 정성홈넷. All rights reserved.
+              &copy; {currentYear} 가온홈시스템. All rights reserved.
             </p>
             <p className="text-slate-500 font-light text-center sm:text-right">
               본 사이트는 비디오폰 및 도어락 간편 견적 안내를 위한 단독 랜딩 페이지입니다.

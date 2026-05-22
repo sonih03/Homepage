@@ -43,7 +43,7 @@ export default function Services({ onViewChange }) {
           <div className="h-1 w-12 bg-brand-blue mx-auto rounded-full mb-6"></div>
 
           <p className="text-[#4E5968] text-xs sm:text-sm font-light mb-12 max-w-3xl mx-auto relative z-10 leading-relaxed text-center">
-            정성홈넷은 오랜 시공 노하우를 바탕으로 고객님의 편의와 집안의 안전을 생각하며 <br className="hidden sm:inline" />
+            가온홈시스템은 오랜 시공 노하우를 바탕으로 고객님의 편의와 집안의 안전을 생각하며 <br className="hidden sm:inline" />
             최고의 기술로 만족스러운 설치를 제공합니다.
           </p>
         </div>
