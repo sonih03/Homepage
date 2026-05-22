@@ -2,6 +2,8 @@ import React from 'react';
 import { Phone, MessageSquare, ArrowDown, MapPin, CheckCircle, Tv, KeyRound, Smartphone, Cpu, ShieldCheck } from 'lucide-react';
 
 export default function Hero() {
+  const [hoveredCard, setHoveredCard] = React.useState(null);
+
   const handleScrollToContact = (e) => {
     e.preventDefault();
     const contactSection = document.getElementById('contact');
@@ -113,73 +115,69 @@ export default function Hero() {
             {/* Back Glow Layer for Tech Cards */}
             <div className="absolute w-72 h-72 bg-gradient-to-tr from-brand-blue/20 to-indigo-500/20 rounded-full blur-[100px] pointer-events-none animate-pulse"></div>
 
-            {/* Smart Wallpad UI Card */}
-            <div className="absolute z-20 top-4 left-4 sm:left-8 w-[250px] sm:w-[270px] bg-white/90 backdrop-blur-md border border-slate-100 rounded-3xl p-5 shadow-[0_20px_50px_rgba(0,0,0,0.04)] hover:scale-105 hover:-translate-y-1 hover:border-brand-blue/30 hover:shadow-[0_20px_40px_rgba(49,130,246,0.08)] transition-all duration-500 group">
-              <div className="flex items-center justify-between mb-4">
-                <div className="flex items-center space-x-2">
-                  <div className="bg-brand-blue/10 p-2 rounded-xl text-brand-blue group-hover:bg-brand-blue group-hover:text-white transition-colors duration-300">
-                    <Tv className="h-4.5 w-4.5" />
-                  </div>
-                  <span className="text-xs font-bold text-slate-800">Smart Wallpad UI</span>
-                </div>
-                <span className="w-2.5 h-2.5 rounded-full bg-green-500 animate-ping"></span>
-              </div>
-              
-              {/* Wallpad Screen Mockup */}
-              <div className="bg-slate-900 rounded-2xl p-4 text-white font-mono text-[10px] space-y-2.5 overflow-hidden relative shadow-inner">
-                <div className="absolute top-2 right-2 text-brand-blue font-bold text-[8px] bg-brand-blue/10 px-1.5 py-0.5 rounded">CONNECTED</div>
-                <div className="text-slate-400 text-[8px] tracking-wider">FACILITY MONITOR</div>
-                
-                <div className="flex items-center space-x-3 py-1.5 border-b border-slate-800">
-                  <div className="bg-brand-blue/20 p-1.5 rounded-lg">
-                    <Cpu className="h-4 w-4 text-brand-blue animate-pulse" />
-                  </div>
-                  <div>
-                    <div className="text-white text-[9px] font-bold">System Status: OK</div>
-                    <div className="text-slate-400 text-[7px]">Interlock Signal Standard</div>
-                  </div>
-                </div>
-                
-                <div className="space-y-1">
-                  <div className="flex justify-between text-slate-400 text-[8px]">
-                    <span>Lobby Interlock</span>
-                    <span className="text-brand-blue font-bold">Active</span>
-                  </div>
-                  <div className="flex justify-between text-slate-400 text-[8px]">
-                    <span>Doorlock Module</span>
-                    <span className="text-brand-blue font-bold">Standby</span>
-                  </div>
-                </div>
-              </div>
-              <div className="mt-3.5 text-left text-xs font-bold text-slate-800">지능형 홈 네트워크 연동</div>
-              <p className="text-[10px] text-slate-500 font-light mt-1">도어락 및 경비실 무선 송수신 모듈을 완벽하게 세팅합니다.</p>
-            </div>
-
-            {/* Smart Access Security Card (Doorlock Tech Card) */}
-            <div className="absolute z-30 bottom-4 right-4 sm:right-8 w-[230px] sm:w-[250px] bg-slate-900 border border-slate-800 text-white rounded-3xl p-5 shadow-[0_25px_55px_rgba(0,0,0,0.12)] hover:scale-105 hover:-translate-y-1 hover:border-brand-blue/40 hover:shadow-[0_20px_40px_rgba(49,130,246,0.15)] transition-all duration-500 group">
+            {/* Smart Access Security Card (Top Dark Card) */}
+            <div 
+              className="absolute top-4 left-4 sm:left-8 w-[250px] sm:w-[270px] bg-slate-900 border border-slate-800 text-white rounded-3xl p-5 shadow-[0_20px_50px_rgba(0,0,0,0.15)] hover:scale-105 hover:-translate-y-1 hover:border-brand-blue/40 hover:shadow-[0_20px_40px_rgba(49,130,246,0.15)] transition-all duration-500 group"
+              style={{ zIndex: hoveredCard === 'dark' ? 35 : 20 }}
+              onMouseEnter={() => setHoveredCard('dark')}
+              onMouseLeave={() => setHoveredCard(null)}
+            >
               <div className="flex items-center justify-between mb-4">
                 <div className="flex items-center space-x-2">
                   <div className="bg-brand-blue/20 p-2 rounded-xl text-brand-blue group-hover:bg-brand-blue group-hover:text-white transition-colors duration-300">
                     <KeyRound className="h-4.5 w-4.5" />
                   </div>
-                  <span className="text-xs font-bold text-slate-300">Access Control</span>
+                  <span className="text-xs font-bold text-slate-300">🔐 프리미엄 도어락 & 안심 보안</span>
                 </div>
-                <span className="text-[9px] font-bold text-brand-blue bg-brand-blue/10 px-2 py-0.5 rounded">SECURE</span>
+                <span className="text-[9px] font-bold text-brand-blue bg-brand-blue/15 px-2 py-0.5 rounded">정밀 시공 보증</span>
               </div>
 
-              {/* Fingerprint / Key Animation Box */}
-              <div className="bg-slate-800/50 rounded-2xl p-4 flex flex-col items-center justify-center space-y-2 border border-slate-700/50">
-                <div className="relative">
-                  <div className="absolute -inset-1.5 bg-brand-blue/20 rounded-full blur animate-pulse"></div>
-                  <div className="bg-slate-900 p-2.5 rounded-full relative z-10 border border-brand-blue/30 text-brand-blue">
-                    <Smartphone className="h-5 w-5 animate-pulse" />
-                  </div>
+              {/* Doorlock Visual Box */}
+              <div className="bg-slate-800/50 rounded-2xl p-4 flex flex-col space-y-1.5 border border-slate-700/50">
+                <div className="text-brand-blue font-bold text-[8px] tracking-widest font-mono">SECURE INTERLOCK</div>
+                <div className="text-xs sm:text-sm font-black text-slate-100 leading-snug">
+                  푸시풀 · 지문인식 · 무선 문열림 연동
                 </div>
-                <span className="text-[8px] text-slate-400 font-mono tracking-widest">BIOMETRIC AUTHENTICATED</span>
               </div>
               
-              <div className="mt-3.5 text-left text-xs font-bold text-slate-100">디지털 도어락 정밀 시공</div>
-              <p className="text-[10px] text-slate-400 font-light mt-1">최신 지문 인식 및 스마트 도어락을 밀착하여 견고하게 시공합니다.</p>
+              <div className="mt-3.5 text-left text-xs font-bold text-slate-200">튼튼한 정밀 장착</div>
+              <p className="text-[10px] text-slate-400 font-light mt-1 leading-relaxed">
+                거실 비디오폰에서 버튼 하나로 현관문이 열리는 편리한 무선 연동 시스템을 유격 없이 정밀하고 튼튼하게 장착해 드립니다.
+              </p>
+            </div>
+
+            {/* Smart Wallpad Card (Bottom White Card) */}
+            <div 
+              className="absolute bottom-4 right-4 sm:right-8 w-[250px] sm:w-[270px] bg-white/95 backdrop-blur-md border border-slate-100 rounded-3xl p-5 shadow-[0_25px_55px_rgba(0,0,0,0.04)] hover:scale-105 hover:-translate-y-1 hover:border-brand-blue/30 hover:shadow-[0_20px_40px_rgba(49,130,246,0.08)] transition-all duration-500 group"
+              style={{ zIndex: hoveredCard === 'white' ? 35 : 30 }}
+              onMouseEnter={() => setHoveredCard('white')}
+              onMouseLeave={() => setHoveredCard(null)}
+            >
+              <div className="flex items-center justify-between mb-4">
+                <div className="flex items-center space-x-2">
+                  <div className="bg-brand-blue/10 p-2 rounded-xl text-brand-blue group-hover:bg-brand-blue group-hover:text-white transition-colors duration-300">
+                    <Tv className="h-4.5 w-4.5" />
+                  </div>
+                  <span className="text-xs font-bold text-slate-800">🖥️ 스마트 월패드 & 인터폰 시공</span>
+                </div>
+                <span className="inline-flex items-center space-x-1.5">
+                  <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
+                  <span className="text-[9px] font-bold text-slate-500">전 브랜드 연동 가능</span>
+                </span>
+              </div>
+              
+              {/* Wallpad Screen / Compatibility Box */}
+              <div className="bg-slate-50 rounded-2xl p-4 text-slate-800 font-sans text-xs space-y-1.5 border border-slate-100 shadow-inner">
+                <div className="text-brand-blue font-bold text-[8px] tracking-widest font-mono">COMPATIBILITY MATCH</div>
+                <div className="text-xs sm:text-sm font-black text-slate-800 leading-snug">
+                  삼성 · 코맥스 · 코콤 완벽 호환
+                </div>
+              </div>
+              
+              <div className="mt-3.5 text-left text-xs font-bold text-slate-800">슬림 밀착 마감 교체</div>
+              <p className="text-[10px] text-slate-500 font-light mt-1 leading-relaxed">
+                우리 아파트 시스템에 딱 맞는 제품 매칭으로, 노후된 구형 인터폰을 세련된 최신형 월패드로 완벽하게 교체 시공합니다.
+              </p>
             </div>
 
             {/* Accent Decorative Floating Card (Mini Badge) */}
