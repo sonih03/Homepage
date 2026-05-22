@@ -79,7 +79,7 @@ export default function Hero() {
                 <span>전화 문의하기</span>
               </a>
               <a
-                href="sms:010-3977-1969?body=안녕하세요.%20가온홈시스템%20비디오폰/도어락%20설치%20견적%20문의드립니다."
+                href={`sms:010-3977-1969?body=${encodeURIComponent('[가온홈시스템 입니다]')}`}
                 className="w-full sm:w-auto flex items-center justify-center space-x-2 bg-white hover:bg-slate-50 border border-slate-200 text-brand-text px-6 py-3.5 sm:px-8 sm:py-4 rounded-xl font-bold text-base sm:text-lg transition-all duration-300 shadow-sm hover:scale-105 transform hover:-translate-y-0.5"
               >
                 <MessageSquare className="h-5 w-5 text-brand-blue shrink-0" />

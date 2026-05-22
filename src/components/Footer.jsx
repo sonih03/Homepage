@@ -5,8 +5,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <>
-      <footer className="bg-[#EEF1F4] border-t border-slate-200 py-16 pb-28 md:pb-16 text-slate-600 relative overflow-hidden">
+    <footer className="bg-[#EEF1F4] border-t border-slate-200 py-16 text-slate-600 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-12">
             
@@ -79,33 +78,5 @@ export default function Footer() {
           </div>
         </div>
       </footer>
-
-      {/* Mobile Sticky Quick Menu (visible only on mobile/tablet) */}
-      <div className="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-white border-t border-slate-200 p-3 flex gap-3 shadow-[0_-4px_20px_rgba(0,0,0,0.06)]">
-        <a
-          href="tel:010-3977-1969"
-          className="flex-1 flex items-center justify-center space-x-1.5 bg-brand-blue hover:bg-brand-blueHover text-white py-3.5 rounded-xl font-extrabold text-sm transition-all duration-300"
-        >
-          <Phone className="h-4.5 w-4.5" />
-          <span>전화 상담</span>
-        </a>
-        <a
-          href="sms:010-3977-1969?body=안녕하세요.%20비디오폰/도어락%20설치%20견적%20문의드립니다."
-          className="flex-1 flex items-center justify-center space-x-1.5 bg-white hover:bg-slate-50 border border-slate-200 text-brand-text py-3.5 rounded-xl font-extrabold text-sm transition-all duration-300 shadow-sm"
-        >
-          <MessageSquare className="h-4.5 w-4.5 text-brand-blue" />
-          <span>문자 문의</span>
-        </a>
-        <a
-          href="https://blog.naver.com/1969smj"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="px-4 flex items-center justify-center bg-white hover:bg-slate-50 border border-slate-200 rounded-xl text-slate-500 hover:text-brand-text transition-all duration-300"
-          aria-label="네이버 블로그"
-        >
-          <ExternalLink className="h-4.5 w-4.5" />
-        </a>
-      </div>
-    </>
   );
 }

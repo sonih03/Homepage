@@ -38,7 +38,7 @@ export default function Services({ onViewChange }) {
             Service Information
           </h2>
           <p className="text-3xl sm:text-4xl font-extrabold text-brand-text tracking-tight mb-4">
-            전문적이고 정직한 주요 서비스
+            주요 서비스
           </p>
           <div className="h-1 w-12 bg-brand-blue mx-auto rounded-full mb-6"></div>
 

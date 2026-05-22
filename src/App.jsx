@@ -21,7 +21,7 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-brand-bg text-brand-text selection:bg-brand-blue selection:text-white flex flex-col pb-24 md:pb-0">
+    <div className="min-h-screen bg-brand-bg text-brand-text selection:bg-brand-blue selection:text-white flex flex-col">
       {/* Dynamic Navigation Header */}
       <Navbar currentView={view} onViewChange={setView} />
 
@@ -36,7 +36,7 @@ function App() {
             <Services onViewChange={setView} />
 
             {/* Before & After Slider Section */}
-            <BeforeAfterSlider />
+            {/* <BeforeAfterSlider /> */}
 
             {/* Gallery Section */}
             <Gallery />
