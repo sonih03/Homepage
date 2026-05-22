@@ -54,7 +54,7 @@ export default function Services({ onViewChange }) {
           </p>
           <div className="h-1 w-12 bg-brand-blue mx-auto rounded-full mb-6"></div>
 
-          <p className="text-[#4E5968] text-xs sm:text-sm font-light mb-12 max-w-3xl mx-auto relative z-10 leading-relaxed text-center">
+          <p className="text-gray-700 text-xs sm:text-sm font-normal mb-12 max-w-3xl mx-auto relative z-10 leading-relaxed text-center">
             가온홈시스템은 오랜 시공 노하우를 바탕으로 고객님의 편의와 집안의 안전을 생각하며 <br className="hidden sm:inline" />
             최고의 기술로 만족스러운 설치를 제공합니다.
           </p>
@@ -78,14 +78,14 @@ export default function Services({ onViewChange }) {
               </h3>
 
               {/* Description */}
-              <p className="text-[#4E5968] text-xs sm:text-sm leading-relaxed mb-6 flex-grow font-light break-keep">
+              <p className="text-gray-800 text-xs sm:text-sm leading-relaxed mb-6 flex-grow font-normal break-keep">
                 {service.description}
               </p>
 
               {/* Bullet Features */}
               <ul className="space-y-2.5 pt-5 border-t border-slate-100 mb-6">
                 {service.features.map((feat) => (
-                  <li key={feat} className="text-sm text-slate-700 flex items-center space-x-2 font-light">
+                  <li key={feat} className="text-sm text-gray-800 flex items-center space-x-2 font-normal">
                     <span className="w-1.5 h-1.5 rounded-full bg-brand-blue shrink-0"></span>
                     <span className="break-keep">{feat}</span>
                   </li>
@@ -104,9 +104,8 @@ export default function Services({ onViewChange }) {
           ))}
         </div>
 
-        {/* Floating Call to Action */}
         <div className="mt-16 text-center">
-          <p className="text-xs sm:text-sm text-[#4E5968] font-light">
+          <p className="text-xs sm:text-sm text-gray-700 font-normal">
             어떤 규격을 선택해야 할지 고민되시나요?
             <a
               href="#contact"

@@ -134,7 +134,7 @@ export default function ContactForm({ selectedService, resetSelectedService }) {
             간편 모바일 견적 문의
           </p>
           <div className="h-1 w-12 bg-brand-blue mx-auto rounded-full mb-6"></div>
-          <p className="text-[#4E5968] text-base font-light max-w-xl mx-auto">
+          <p className="text-gray-700 text-base font-normal max-w-xl mx-auto">
             시공이 필요하신 항목을 선택하여 문의를 남겨주시면, 내용 확인 후 신속하고 정직하게 전화상담을 도와드립니다.
           </p>
         </div>
@@ -208,7 +208,7 @@ export default function ContactForm({ selectedService, resetSelectedService }) {
                     className={`py-3.5 px-4 rounded-xl text-xs sm:text-sm font-bold border transition-all duration-300 text-left flex items-center justify-between ${
                       formData.service === srv
                         ? 'bg-brand-blue/5 border-brand-blue text-brand-blue shadow-sm'
-                        : 'bg-slate-50/50 border-slate-200 text-slate-600 hover:text-brand-text hover:border-slate-300'
+                        : 'bg-slate-50/50 border-slate-200 text-gray-700 hover:text-brand-text hover:border-slate-300'
                     }`}
                   >
                     <span>{srv}</span>
@@ -245,7 +245,7 @@ export default function ContactForm({ selectedService, resetSelectedService }) {
               {/* Detail Address Input */}
               <div className="sm:col-span-2">
                 <label htmlFor="address" className="block text-sm font-bold text-brand-text mb-2">
-                  상세 지역 / 주소 <span className="text-[#4E5968] text-xs font-normal">(예: 서울시 마포구 아현동 / 전국 시공)</span>
+                  상세 지역 / 주소 <span className="text-gray-600 text-xs font-normal">(예: 서울시 마포구 아현동 / 전국 시공)</span>
                 </label>
                 <input
                   type="text"
@@ -289,7 +289,7 @@ export default function ContactForm({ selectedService, resetSelectedService }) {
                   <span className="text-sm font-bold text-brand-text group-hover:text-brand-blue transition-colors duration-300">
                     개인정보 수집 및 이용 동의 <span className="text-red-500 font-bold">(필수)</span>
                   </span>
-                  <span className="text-[10px] text-[#4E5968] mt-1 font-light leading-relaxed">
+                  <span className="text-[10px] text-gray-700 mt-1 font-normal leading-relaxed">
                     작성해 주신 정보는 견적 상담 제공 목적으로만 일시 보관되며, 상담 후 완전 파기됩니다.
                   </span>
                 </div>
@@ -338,16 +338,16 @@ export default function ContactForm({ selectedService, resetSelectedService }) {
             <h3 className="text-xl sm:text-2xl font-bold text-brand-text mb-2">
               견적 문의 접수 준비 완료!
             </h3>
-            <p className="text-[#4E5968] text-xs sm:text-sm font-light mb-6">
+            <p className="text-gray-700 text-xs sm:text-sm font-normal mb-6">
               입력하신 문의 내역이 정리되었습니다. 아래 버튼을 눌러 문자를 전송해 주시면 바로 신청이 접수됩니다.
             </p>
 
             {/* Form details box */}
             <div className="bg-slate-50 rounded-xl p-4 text-left text-xs space-y-2 mb-6 border border-slate-100">
-              <div><span className="text-[#4E5968]">의뢰인:</span> <span className="text-brand-text font-bold">{formData.name}님</span></div>
-              <div><span className="text-[#4E5968]">연락처:</span> <span className="text-brand-text font-bold">{formData.phone}</span></div>
-              <div><span className="text-[#4E5968]">설치항목:</span> <span className="text-brand-blue font-bold">{formData.service}</span></div>
-              <div><span className="text-[#4E5968]">시공지역:</span> <span className="text-brand-text font-bold">[{formData.region}] {formData.address || '상세주소 미지정'}</span></div>
+              <div><span className="text-gray-700">의뢰인:</span> <span className="text-brand-text font-bold">{formData.name}님</span></div>
+              <div><span className="text-gray-700">연락처:</span> <span className="text-brand-text font-bold">{formData.phone}</span></div>
+              <div><span className="text-gray-700">설치항목:</span> <span className="text-brand-blue font-bold">{formData.service}</span></div>
+              <div><span className="text-gray-700">시공지역:</span> <span className="text-brand-text font-bold">[{formData.region}] {formData.address || '상세주소 미지정'}</span></div>
             </div>
 
             {/* Modal Actions */}
@@ -372,7 +372,7 @@ export default function ContactForm({ selectedService, resetSelectedService }) {
             
             <button
               onClick={handleCloseModal}
-              className="mt-4 text-xs text-[#4E5968] hover:text-brand-text underline transition-colors"
+              className="mt-4 text-xs text-gray-700 hover:text-brand-text underline transition-colors"
             >
               닫기
             </button>

@@ -171,7 +171,7 @@ export default function Gallery() {
             시공 갤러리
           </p>
           <div className="h-1 w-12 bg-brand-blue mx-auto rounded-full mb-6"></div>
-          <p className="text-[#4E5968] text-base sm:text-lg font-light leading-relaxed">
+          <p className="text-gray-600 text-base sm:text-lg font-normal leading-relaxed">
             전국 각지에서 성실하게 직접 시공한 가온홈시스템의 네이버 블로그 작업 일지입니다.<br className="hidden sm:inline" />
             최신 시공 내역과 생생한 시공 현장의 모습을 확인해 보세요.
           </p>
@@ -220,8 +220,8 @@ export default function Gallery() {
                       <span className="text-[11px] font-bold text-brand-blue bg-brand-blue/5 border border-brand-blue/10 px-2.5 py-1 rounded-full">
                         {item.category}
                       </span>
-                      <span className="text-[11px] text-[#4E5968] font-normal flex items-center space-x-1">
-                        <Calendar className="h-3 w-3 inline text-slate-400" />
+                      <span className="text-[11px] text-gray-600 font-normal flex items-center space-x-1">
+                        <Calendar className="h-3 w-3 inline text-gray-600" />
                         <span>{formatDate(item.pubDate)}</span>
                       </span>
                     </div>
@@ -232,7 +232,7 @@ export default function Gallery() {
                     </h3>
 
                     {/* Description */}
-                    <p className="text-[#4E5968] text-xs sm:text-sm leading-relaxed font-light line-clamp-3">
+                    <p className="text-gray-700 text-xs sm:text-sm leading-relaxed font-normal line-clamp-3">
                       {item.description}
                     </p>
                   </div>
@@ -243,7 +243,7 @@ export default function Gallery() {
                     <div className={`${cardTheme.iconColor} relative z-10 transition-transform duration-300 group-hover:scale-110`}>
                       {cardTheme.icon}
                     </div>
-                    <span className="text-[11px] text-brand-text font-bold relative z-10 flex items-center space-x-1">
+                    <span className="text-[11px] text-gray-800 font-medium relative z-10 flex items-center space-x-1">
                       <span>시공 일지 바로가기</span>
                       <ExternalLink className="h-3 w-3 inline opacity-70" />
                     </span>
@@ -261,13 +261,10 @@ export default function Gallery() {
           <h3 className="text-xl sm:text-2xl font-bold text-brand-text mb-4 relative z-10">
             네이버 블로그에서 다양한 현장 사례를 확인하세요!
           </h3>
-          {/* <p className="text-[#4E5968] text-xs sm:text-sm font-light mb-8 max-w-xl mx-auto relative z-10 leading-relaxed">
-            비디오폰 마감판 시공 모습, 도어락 작동 테스트, 무선 수신기 연동 등 직접 작업한 다양한 상세 시공 일지들을 볼 수 있습니다.
-          </p> */}
-          <p className="text-[#4E5968] text-xs sm:text-sm font-light mb-8 max-w-2xl mx-auto relative z-10 leading-relaxed">
-            비디오폰 마감판 시공 모습, 도어락 작동 테스트, 무선 수신기 연동 등 <br class="hidden sm:inline" />
+          <p className="text-gray-700 text-xs sm:text-sm font-normal mb-8 max-w-2xl mx-auto relative z-10 leading-relaxed">
+            비디오폰 마감판 시공 모습, 도어락 작동 테스트, 무선 수신기 연동 등 <br className="hidden sm:inline" />
             직접 작업한 다양한 상세 시공 일지들을 볼 수 있습니다.
-</p>
+          </p>
           <a
             href={blogUrl}
             target="_blank"

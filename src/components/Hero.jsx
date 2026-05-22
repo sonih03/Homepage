@@ -48,13 +48,13 @@ export default function Hero() {
             </h1>
 
             {/* Hero Subtitle */}
-            <p className="text-sm sm:text-base md:text-lg lg:text-xl text-[#4E5968] mb-8 sm:mb-10 leading-relaxed font-light max-w-xl relative z-10 break-keep">
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-700 mb-8 sm:mb-10 leading-relaxed font-normal max-w-xl relative z-10 break-keep">
               직접 현장에 방문하여 내 집처럼 <span className="text-brand-text font-bold">정직하고, 꼼꼼하게</span> 설치합니다. <br />
               오랜 경력의 노하우로 깔끔하고 빈틈없는 마감을 약속드립니다.
             </p>
 
             {/* Trust Badges */}
-            <div className="flex flex-wrap gap-x-6 gap-y-3 mb-8 sm:mb-10 text-xs sm:text-sm text-[#4E5968] font-medium relative z-10 break-keep">
+            <div className="flex flex-wrap gap-x-6 gap-y-3 mb-8 sm:mb-10 text-xs sm:text-sm text-gray-700 font-bold relative z-10 break-keep">
               <div className="flex items-center space-x-1.5">
                 <CheckCircle className="h-4 w-4 text-brand-blue shrink-0" />
                 <span>정밀 맞춤 시공</span>
@@ -90,7 +90,7 @@ export default function Hero() {
             {/* Accent Banner Box */}
             <div className="w-full max-w-lg bg-white border border-slate-100/80 rounded-2xl p-5 shadow-[0_8px_30px_rgba(0,0,0,0.02)] glass-card relative z-10 break-keep">
               <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-                <p className="text-[#4E5968] text-xs sm:text-sm font-light">
+                <p className="text-gray-700 text-xs sm:text-sm font-normal">
                   상담 전화 · 문자 : <span className="text-brand-text font-black text-sm sm:text-base ml-1">010-3977-1969</span>
                 </p>
                 <a 
@@ -133,7 +133,7 @@ export default function Hero() {
                 </div>
                 <span className="inline-flex items-center space-x-1.5">
                   <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
-                  <span className="text-[9px] font-bold text-slate-500">추가금 0원 보장</span>
+                  <span className="text-[9px] font-bold text-gray-600">추가금 0원 보장</span>
                 </span>
               </div>
               
@@ -145,7 +145,7 @@ export default function Hero() {
                 </div>
               </div>
               
-              <p className="text-[10px] text-slate-500 font-light mt-3.5 leading-relaxed break-keep">
+              <p className="text-[10px] text-gray-700 font-normal mt-3.5 leading-relaxed break-keep">
                 현장에서 말을 바꾸지 않습니다. 처음 안내해 드린 정직한 견적 그대로 책임 시공합니다.
               </p>
             </div>
@@ -175,7 +175,7 @@ export default function Hero() {
                 </div>
               </div>
               
-              <p className="text-[10px] text-slate-400 font-light mt-3.5 leading-relaxed break-keep">
+              <p className="text-[10px] text-gray-300 font-normal mt-3.5 leading-relaxed break-keep">
                 구형 인터폰 탈거 흔적을 전용 마감판으로 메워, 인테리어 이중 지출을 확실하게 막아드립니다.
               </p>
             </div>

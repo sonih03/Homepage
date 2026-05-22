@@ -89,7 +89,7 @@ export default function BeforeAfterSlider() {
             가온홈시스템 실제 시공 전후 비교
           </p>
           <div className="h-1 w-12 bg-brand-blue mx-auto rounded-full mb-6"></div>
-          <p className="text-[#4E5968] text-base sm:text-lg font-light leading-relaxed max-w-2xl mx-auto">
+          <p className="text-gray-700 text-base sm:text-lg font-normal leading-relaxed max-w-2xl mx-auto">
             중앙의 핸들바를 좌우로 드래그하여 비포/애프터의 차이를 비교해 보세요!
           </p>
         </div>
@@ -101,7 +101,7 @@ export default function BeforeAfterSlider() {
             className={`flex items-center space-x-2 px-5 py-3 rounded-full text-sm font-bold border transition-all duration-300 ${
               activeTab === 'videophone'
                 ? 'bg-brand-blue text-white border-brand-blue shadow-lg shadow-brand-blue/15'
-                : 'bg-white text-[#4E5968] border-slate-200 hover:text-brand-text hover:border-slate-300'
+                : 'bg-white text-gray-700 border-slate-200 hover:text-brand-text hover:border-slate-300'
             }`}
           >
             <Tv className="h-4 w-4 mr-1" />
@@ -112,7 +112,7 @@ export default function BeforeAfterSlider() {
             className={`flex items-center space-x-2 px-5 py-3 rounded-full text-sm font-bold border transition-all duration-300 ${
               activeTab === 'doorlock'
                 ? 'bg-brand-blue text-white border-brand-blue shadow-lg shadow-brand-blue/15'
-                : 'bg-white text-[#4E5968] border-slate-200 hover:text-brand-text hover:border-slate-300'
+                : 'bg-white text-gray-700 border-slate-200 hover:text-brand-text hover:border-slate-300'
             }`}
           >
             <KeyRound className="h-4 w-4 mr-1" />
@@ -128,7 +128,7 @@ export default function BeforeAfterSlider() {
               <span className="w-1.5 h-6 bg-brand-blue rounded-full mr-2.5"></span>
               {currentData.title}
             </h3>
-            <p className="text-xs sm:text-sm text-[#4E5968] font-light leading-relaxed text-center sm:text-left">
+            <p className="text-xs sm:text-sm text-gray-700 font-normal leading-relaxed text-center sm:text-left">
               {currentData.desc}
             </p>
           </div>

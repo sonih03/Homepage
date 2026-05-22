@@ -52,7 +52,7 @@ export default function ProductCatalog({ onViewChange, onSelectService }) {
           <h1 className="text-3xl sm:text-4xl font-extrabold text-brand-text tracking-tight mb-3">
             시공 제품 종류 및 특징 안내
           </h1>
-          <p className="text-[#4E5968] text-sm sm:text-base font-light max-w-2xl">
+          <p className="text-gray-700 text-sm sm:text-base font-normal max-w-2xl">
             가온홈시스템에서 취급 및 전문 시공하고 있는 비디오폰, 도어락, 로비폰의 대략적인 분류와 상세 스펙 예시입니다. 고객님 댁의 환경에 맞는 맞춤 상담을 받아보세요.
           </p>
         </div>
@@ -66,7 +66,7 @@ export default function ProductCatalog({ onViewChange, onSelectService }) {
               className={`flex items-center px-4 py-2.5 rounded-full text-xs sm:text-sm font-bold border transition-all duration-300 ${
                 activeTab === cat.id
                   ? 'bg-brand-blue text-white border-brand-blue shadow-lg shadow-brand-blue/10'
-                  : 'bg-white text-[#4E5968] border-slate-200 hover:text-brand-text hover:border-slate-300'
+                  : 'bg-white text-gray-700 border-slate-200 hover:text-brand-text hover:border-slate-300'
               }`}
             >
               {cat.icon}
@@ -99,7 +99,7 @@ export default function ProductCatalog({ onViewChange, onSelectService }) {
                 <h3 className="text-lg font-bold text-brand-text mb-1">
                   {prod.title}
                 </h3>
-                <span className="text-xs text-[#4E5968] font-light block mb-3">
+                <span className="text-xs text-gray-600 font-normal block mb-3">
                   {prod.subtitle}
                 </span>
 
@@ -134,28 +134,28 @@ export default function ProductCatalog({ onViewChange, onSelectService }) {
                         }
                       }}
                     />
-                    <div className="image-fallback hidden absolute inset-0 flex flex-col items-center justify-center space-y-1.5 text-center text-[#4E5968]/60 p-4">
-                      <ShieldCheck className="h-6 w-6 text-slate-300" />
-                      <span className="text-[11px] font-semibold text-[#4E5968]">제품 사진 준비중</span>
+                    <div className="image-fallback hidden absolute inset-0 flex flex-col items-center justify-center space-y-1.5 text-center text-gray-600 p-4">
+                      <ShieldCheck className="h-6 w-6 text-slate-400" />
+                      <span className="text-[11px] font-semibold text-gray-700">제품 사진 준비중</span>
                     </div>
                   </div>
                 ) : (
-                  <div className="aspect-video bg-slate-50 border border-dashed border-slate-200 rounded-xl mb-5 flex flex-col items-center justify-center space-y-1.5 text-center text-[#4E5968]/60 p-4">
-                    <ShieldCheck className="h-6 w-6 text-slate-300" />
-                    <span className="text-[11px] font-semibold text-[#4E5968]">제품 사진 등록 예정</span>
-                    <span className="text-[9px] font-light">추후 실제 모델 이미지와 기능 카탈로그가 업데이트됩니다.</span>
+                  <div className="aspect-video bg-slate-50 border border-dashed border-slate-200 rounded-xl mb-5 flex flex-col items-center justify-center space-y-1.5 text-center text-gray-600 p-4">
+                    <ShieldCheck className="h-6 w-6 text-slate-400" />
+                    <span className="text-[11px] font-semibold text-gray-700">제품 사진 등록 예정</span>
+                    <span className="text-[9px] font-normal">추후 실제 모델 이미지와 기능 카탈로그가 업데이트됩니다.</span>
                   </div>
                 )}
 
                 {/* Description */}
-                <p className="text-xs sm:text-sm text-[#4E5968] font-light leading-relaxed mb-6">
+                <p className="text-xs sm:text-sm text-gray-700 font-normal leading-relaxed mb-6">
                   {prod.description}
                 </p>
 
                 {/* Features Checklist */}
                 <ul className="space-y-2 mb-6">
                   {prod.features && prod.features.map((feat, idx) => (
-                    <li key={idx} className="flex items-start text-xs text-slate-700 font-light">
+                    <li key={idx} className="flex items-start text-xs text-gray-800 font-normal">
                       <Check className="h-3.5 w-3.5 text-brand-blue mr-1.5 mt-0.5 shrink-0" />
                       <span>{feat}</span>
                     </li>
@@ -165,7 +165,7 @@ export default function ProductCatalog({ onViewChange, onSelectService }) {
 
               <div>
                 {/* Tech Specs */}
-                <div className="bg-slate-50 rounded-xl p-3 text-[11px] text-[#4E5968] font-light mb-5 border border-slate-100">
+                <div className="bg-slate-50 rounded-xl p-3 text-[11px] text-gray-700 font-normal mb-5 border border-slate-100">
                   {prod.specs}
                 </div>
 
@@ -192,7 +192,7 @@ export default function ProductCatalog({ onViewChange, onSelectService }) {
           <h3 className="text-xl sm:text-2xl font-bold text-brand-text mb-3">
             어떤 제품을 시공해야 할지 감이 안 잡히시나요?
           </h3>
-          <p className="text-[#4E5968] text-xs sm:text-sm font-light mb-6 max-w-lg mx-auto leading-relaxed">
+          <p className="text-gray-700 text-xs sm:text-sm font-normal mb-6 max-w-lg mx-auto leading-relaxed">
             아파트 공동 현관 방식(디지털 BUS 방식 또는 아날로그 국선 방식)에 따라 호환되는 비디오폰 기종이 다릅니다. 전화로 아파트 단지명을 말씀해 주시면 빠르게 알려드리겠습니다.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
