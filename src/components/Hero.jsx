@@ -69,21 +69,21 @@ export default function Hero() {
               </div>
             </div>
 
-            {/* CTA Buttons */}
-            <div className="flex flex-col md:flex-row items-center gap-3 w-full md:w-auto mb-8 sm:mb-10 relative z-10">
+            {/* CTA Buttons - Mobile Fixed Bottom Action Bar, Desktop Relative Layout */}
+            <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-slate-100 p-4 z-50 flex flex-row gap-3 shadow-[0_-4px_20px_rgba(0,0,0,0.05)] md:relative md:bottom-auto md:left-auto md:right-auto md:bg-transparent md:border-t-0 md:p-0 md:z-10 md:flex md:flex-row md:shadow-none md:gap-4 md:mb-10 w-full md:w-auto">
               <a
                 href="tel:010-3977-1969"
-                className="w-full md:w-auto flex items-center justify-center space-x-2 bg-brand-blue hover:bg-brand-blueHover text-white px-6 py-3.5 md:px-8 md:py-4 rounded-xl font-bold text-base md:text-lg transition-all duration-300 shadow-lg shadow-brand-blue/10 hover:shadow-brand-blue/20 hover:scale-105 transform hover:-translate-y-0.5"
+                className="flex-1 md:flex-none md:w-auto flex items-center justify-center space-x-2 bg-brand-blue hover:bg-brand-blueHover text-white py-3.5 md:px-8 md:py-4 rounded-xl font-bold text-base md:text-lg transition-all duration-300 shadow-lg shadow-brand-blue/10 hover:shadow-brand-blue/20 hover:scale-105 transform hover:-translate-y-0.5"
               >
                 <Phone className="h-5 w-5 shrink-0" />
-                <span>전화 문의하기</span>
+                <span>전화 문의</span>
               </a>
               <a
                 href="sms:010-3977-1969?body=안녕하세요.%20가온홈시스템%20비디오폰/도어락%20설치%20견적%20문의드립니다."
-                className="w-full md:w-auto flex items-center justify-center space-x-2 bg-white hover:bg-slate-50 border border-slate-200 text-brand-text px-6 py-3.5 md:px-8 md:py-4 rounded-xl font-bold text-base md:text-lg transition-all duration-300 shadow-sm hover:scale-105 transform hover:-translate-y-0.5"
+                className="flex-1 md:flex-none md:w-auto flex items-center justify-center space-x-2 bg-white hover:bg-slate-50 border border-slate-200 text-brand-text py-3.5 md:px-8 md:py-4 rounded-xl font-bold text-base md:text-lg transition-all duration-300 shadow-sm hover:scale-105 transform hover:-translate-y-0.5"
               >
                 <MessageSquare className="h-5 w-5 text-brand-blue shrink-0" />
-                <span>문자 문의하기</span>
+                <span>문자 문의</span>
               </a>
             </div>
 

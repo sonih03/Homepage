@@ -21,7 +21,7 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-brand-bg text-brand-text selection:bg-brand-blue selection:text-white flex flex-col">
+    <div className="min-h-screen bg-brand-bg text-brand-text selection:bg-brand-blue selection:text-white flex flex-col pb-24 md:pb-0">
       {/* Dynamic Navigation Header */}
       <Navbar currentView={view} onViewChange={setView} />
 
