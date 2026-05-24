@@ -93,7 +93,7 @@ export default function ContactForm({ selectedService, resetSelectedService }) {
 
   // Compile SMS text message with regional information
   const getSmsUrl = () => {
-    const message = `[가온홈시스템 견적신청]
+    const message = `[가온홈넷 견적신청]
 이름: ${formData.name}
 연락처: ${formData.phone}
 의뢰항목: ${formData.service}

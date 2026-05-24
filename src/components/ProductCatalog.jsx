@@ -53,7 +53,7 @@ export default function ProductCatalog({ onViewChange, onSelectService }) {
             시공 제품 종류 및 특징 안내
           </h1>
           <p className="text-gray-700 text-sm sm:text-base font-normal max-w-2xl">
-            가온홈시스템에서 취급 및 전문 시공하고 있는 비디오폰, 도어락, 로비폰의 대략적인 분류와 상세 스펙 예시입니다. 고객님 댁의 환경에 맞는 맞춤 상담을 받아보세요.
+            가온홈넷에서 취급 및 전문 시공하고 있는 비디오폰, 도어락, 로비폰의 대략적인 분류와 상세 스펙 예시입니다. 고객님 댁의 환경에 맞는 맞춤 상담을 받아보세요.
           </p>
         </div>
 

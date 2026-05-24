@@ -86,7 +86,7 @@ export default function BeforeAfterSlider() {
             Real Before & After
           </h2>
           <p className="text-3xl sm:text-4xl font-extrabold text-brand-text tracking-tight mb-4">
-            가온홈시스템 실제 시공 전후 비교
+            가온홈넷 실제 시공 전후 비교
           </p>
           <div className="h-1 w-12 bg-brand-blue mx-auto rounded-full mb-6"></div>
           <p className="text-gray-700 text-base sm:text-lg font-normal leading-relaxed max-w-2xl mx-auto">
