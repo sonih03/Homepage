@@ -39,7 +39,7 @@ function App() {
             {/* <BeforeAfterSlider /> */}
 
             {/* Gallery Section */}
-            <Gallery />
+            {/* <Gallery /> */}
 
             {/* Contact Form Section */}
             <ContactForm 

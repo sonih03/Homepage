@@ -50,7 +50,7 @@ export default function Footer() {
                   </a>
                 </p>
                 <p>상담 시간 : 오전 08:00 ~ 오후 09:00 (연중무휴)</p>
-                <p>
+                {/* <p>
                   공식 블로그 : 
                   <a 
                     href="https://blog.naver.com/1969smj" 
@@ -61,7 +61,7 @@ export default function Footer() {
                     <span>blog.naver.com/1969smj</span>
                     <ExternalLink className="h-3 w-3" />
                   </a>
-                </p>
+                </p> */}
               </div>
             </div>
 

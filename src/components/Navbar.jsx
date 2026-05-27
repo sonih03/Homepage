@@ -40,7 +40,7 @@ export default function Navbar({ currentView, onViewChange }) {
 
   const navLinks = [
     { name: '서비스 안내', target: 'services', type: 'section' },
-    { name: '시공 사례', target: 'gallery', type: 'section' },
+    // { name: '시공 사례', target: 'gallery', type: 'section' },
     { name: '간편 견적 문의', target: 'contact', type: 'section' },
     { name: '시공 제품 안내', target: 'products', type: 'view' },
   ];

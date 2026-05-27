@@ -172,7 +172,7 @@ export default function Gallery() {
           </p>
           <div className="h-1 w-12 bg-brand-blue mx-auto rounded-full mb-6"></div>
           <p className="text-gray-600 text-base sm:text-lg font-normal leading-relaxed">
-            전국 각지에서 성실하게 직접 시공한 가온홈넷의 네이버 블로그 작업 일지입니다.<br className="hidden sm:inline" />
+            전국 각지에서 성실하게 직접 시공한 가온홈넷의 주요 작업 일지입니다.<br className="hidden sm:inline" />
             최신 시공 내역과 생생한 시공 현장의 모습을 확인해 보세요.
           </p>
         </div>
@@ -204,12 +204,9 @@ export default function Gallery() {
             {posts.map((item, idx) => {
               const cardTheme = getCardStyle(idx);
               return (
-                <a
+                <div
                   key={item.id}
-                  href={item.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group relative overflow-hidden bg-white border border-slate-100 rounded-2xl p-6 sm:p-8 flex flex-col justify-between min-h-[350px] hover:border-brand-blue/40 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.03)] hover:shadow-[0_15px_35px_rgb(0,0,0,0.07)] hover:-translate-y-1.5"
+                  className="group relative overflow-hidden bg-white border border-slate-100 rounded-2xl p-6 sm:p-8 flex flex-col justify-between min-h-[350px] hover:border-brand-blue/40 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.03)] hover:shadow-[0_15px_35px_rgb(0,0,0,0.07)] hover:-translate-y-1.5 cursor-default"
                 >
                   {/* Decorative Subtle Grid Gradient */}
                   <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-brand-blue/5 via-transparent to-transparent opacity-40 pointer-events-none"></div>
@@ -243,19 +240,19 @@ export default function Gallery() {
                     <div className={`${cardTheme.iconColor} relative z-10 transition-transform duration-300 group-hover:scale-110`}>
                       {cardTheme.icon}
                     </div>
-                    <span className="text-[11px] text-gray-800 font-medium relative z-10 flex items-center space-x-1">
+                    {/* <span className="text-[11px] text-gray-800 font-medium relative z-10 flex items-center space-x-1">
                       <span>시공 일지 바로가기</span>
                       <ExternalLink className="h-3 w-3 inline opacity-70" />
-                    </span>
+                    </span> */}
                   </div>
-                </a>
+                </div>
               );
             })}
           </div>
         )}
 
-        {/* Naver Blog Redirect Callout */}
-        <div className="bg-white border border-slate-100 rounded-3xl p-8 max-w-3xl mx-auto text-center shadow-[0_8px_30px_rgb(0,0,0,0.03)] relative overflow-hidden glass-card">
+        {/* Naver Blog Redirect Callout - Commented Out */}
+        {/* <div className="bg-white border border-slate-100 rounded-3xl p-8 max-w-3xl mx-auto text-center shadow-[0_8px_30px_rgb(0,0,0,0.03)] relative overflow-hidden glass-card">
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-brand-blue/5 rounded-full blur-3xl pointer-events-none"></div>
           
           <h3 className="text-xl sm:text-2xl font-bold text-brand-text mb-4 relative z-10">
@@ -274,7 +271,7 @@ export default function Gallery() {
             <span>블로그 바로가기</span>
             <ExternalLink className="h-4 w-4" />
           </a>
-        </div>
+        </div> */}
       </div>
     </section>
   );
